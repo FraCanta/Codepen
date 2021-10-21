@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    font-weight: 700;
+    
+    overflow-x: hidden;
+}
+
+/* -------------- HEADER E NAVBAR -------------------- */
+
+header {
+    background-color: #1e1f26;
+    height: 65px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 11;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.9);
+}
+
+.logo {
+    display: block;
+    margin: 0 10px;
+    height: 65px;
+}
+
+.logo svg {
+    display: block;
+    fill: #fff;
+    height: 100%;
+    width: 30px;
+}
+
+.senza_titolo {
+    color: #fff;
+    white-space: nowrap;
+    font-size: 10px;
+}
+
+.navBar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.button {
+    display: inline-flex;
+    position: relative;
+}
+
+.button button{
+    font-size: 1em;
+    line-height: 1.2;
+    height: 35px;
+    padding: 16px 10px;
+    margin: 0 10px 0 0;
+    border-radius: 4px;
+    border: 3px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+    font-size: 1rem;
+    text-shadow: none;
+    line-height: 1.2;
+    white-space: nowrap;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    background-color: #545558;
+    color: #fff;
+}
+
+ .signUp button {
+    background-color: #47cf73;
+    align-items:center;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.2;
+    color: #000;
+}
+
+.signUp button:hover {
+    background-color: #55a36b;
+    color: #fff;
+}
+
+button:hover {
+   background-color: #808185;
+}
+
+.btn-text {
+    margin-left: 3px;
+}
+
+svg:hover {
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    cursor: pointer;
+}
+
+/* ---------------------- CONTENUTO PRINCIPALE -------------------------------- */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+    background-color: #313541;
+}
+
+.box_html {
+    height: 350px;
+    width: 33%;
+    padding: 0 10px 0;
+    margin: 0;
+}
+
+.box_css {
+    height: 350px;
+    width: 33%; 
+    padding: 0 10px 0;
+    margin: 0;
+}
+.box_js {
+    height: 350px;
+    width: 33%;
+    padding: 0 10px 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    height: 35px;
+    background-color: #1e1f26;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    color: rgb(139, 138, 138);
+}
+
+.box {
+    height: 340px;
+    color: rgb(139, 138, 138);
+    background-color: #38393d;
+    border: 2px solid transparent;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+}
+
+.settings {
+    font-size: 0.8rem;
+    padding: 2px 7px;
+    border-width: 1px;
+    border-radius: 2px;
+    margin: 5px 10px 5px 5px;
+    border-radius: 4px;
+    border: 3px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    background-color: #545558;
+    color: #fff;
+}
+
+.header span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    border-color: 1px solid #707072;
+}
+
+.dropdown {
+    font-size: 1rem;
+    padding: 1px 7px;
+    margin: 3px 10px 0 0;
+    border-width: 1px;
+    border-radius: 2px 4px;
+    border: 3px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+    line-height: 1.2;
+    white-space: nowrap;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    background-color: #545558;
+    color: #fff;
+}
+
+.dropdown_2 {
+    font-size: 1rem;
+    padding: 1px 7px;
+    margin: 3px 10px 0 0;
+    border-width: 1px;
+    border-radius: 2px 4px;
+    border: 3px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+    line-height: 1.2;
+    white-space: nowrap;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    background-color: #545558;
+    color: #fff;
+}
+
+.buttom-right {
+    margin-left: auto;
+}
+
+/* --------------- DROPDOWN ---------------------- */
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    right: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #545558;
+  }
+
+  .dropdown_2 {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown_2:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown_2:hover .dropbtn {
+    background-color: #545558;
+  }
+
+
+  /* ------------------ BOX WHITE ------------------------- */
+
+  .box_white {
+      height: 435px;
+      border: 2px solid transparent;
+  }
+
+  /* --------------------- FOOTER --------------------------------- */
+
+  .footer {
+      display: flex;
+      height: 28px;
+      border: 2px solid transparent;
+      background-color: #404144;
+  }
+
+  .buttons {
+      width: 20%;
+      height: 30px;
+      margin-left: 6px;
+      align-items: center;
+      
+  }
+
+  .buttons button {
+    border-width: 1px;
+    border-radius: 2px 4px;
+    padding: 2px 4px;
+    margin-left: 2px;
+    vertical-align: middle;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #707072;
+  }
+
+  .buttons button:hover {
+    background-color: #808185;
+  }
